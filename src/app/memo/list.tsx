@@ -19,7 +19,7 @@ const List = (): JSX.Element => {
       </View>
       {/* +ボタン */}
       <CircleButton>
-      <Icon />
+      <Icon name='plus' size={40} color='#ffffff'/>
       </CircleButton>
     </View>
   )
