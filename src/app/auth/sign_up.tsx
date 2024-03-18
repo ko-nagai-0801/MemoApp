@@ -19,8 +19,9 @@ const handlePress = (email: string, password: string): void => {
       router.replace('/memo/list')
     })
     .catch((error) => {
-      const { code, message } = error
+      const { code, message } = error as { code: string, message: string }
       console.log(code, message)
+      // 型アサーションを使用して `message` が `string` であることを保証
       Alert.alert(message)
     })
 }
@@ -52,7 +53,7 @@ const signUp = (): JSX.Element => {
         <Button label='submit' onPress={() => { handlePress(email, password) }} />
         <View style={styles.footer}>
           <Text style={styles.footerText}>Already registered?</Text>
-          <Link href='/auth/log_in' asChild>
+          <Link href='/auth/log_in' asChild replace>
             <TouchableOpacity>
               <Text style={styles.footerLink}>Log in.</Text>
             </TouchableOpacity>
