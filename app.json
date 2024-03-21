@@ -9,22 +9,25 @@
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.myapp.MaemoApp"
+      "supportsTablet": false,
+      "bundleIdentifier": "com.myapp.MaemoApp",
+      "buiidnumber": "1.0.0"
     },
     "android": {
+      "package": "com.myapp.MaemoApp",
+      "versionCode": 1,
+      "permissions": [],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/icon_adaptive_foreground.png",
+        "backgroundImage": "./assets/icon_adaptive_backround.png"
       },
-      "package": "com.myapp.MaemoApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
