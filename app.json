@@ -27,7 +27,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon_adaptive_foreground.png",
         "backgroundImage": "./assets/icon_adaptive_backround.png"
-      },
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
